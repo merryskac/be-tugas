@@ -3,7 +3,7 @@ import Sequelize from 'sequelize';
 const database = new Sequelize('sql12643089', 'sql12643089', 'gtwB8A5jCX', {
   host: 'sql12.freesqldatabase.com',
   dialect: 'mysql',
-  dialectModule: require('mysql2')
+  // dialectModule: require('mysql2')
 })
 
 try{
