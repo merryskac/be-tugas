@@ -1,5 +1,5 @@
 import Express  from 'express';
-import taskRouter from '../src/routes/task.route.js';
+import taskRouter from './src/routes/task.route.js';
 
 const app = Express();
 app.use(Express.json())
