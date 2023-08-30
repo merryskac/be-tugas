@@ -11,8 +11,10 @@ app.use(Express.json())
 
 
 
+app.get('/',(req,res)=>{
+  res.json('haloooo')
+})
 app.use(taskRouter)
-
 // io.on("connection", (socket)=>{
 //   socket.on("message", (data)=>{
 //     console.log(data)
