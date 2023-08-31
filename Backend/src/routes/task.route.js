@@ -2,7 +2,7 @@ import  Express  from "express";
 import { createTask, deleteTask, filterTask, getAllTask, getTaskNotification, updateTask } from "../controller/task.controller.js";
 const taskRouter = Express.Router()
 
-taskRouter.get('/task', getAllTask)
+taskRouter.get('/task/:user_id', getAllTask)
 taskRouter.post('/task', createTask)
 taskRouter.put('/task/:id', updateTask)
 taskRouter.delete('/task/:id/delete', deleteTask)
