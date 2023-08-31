@@ -5,13 +5,13 @@ import { Op } from 'sequelize';
 
 export const getAllTask = async (req, res) => {
 	try {
-		if (!req.body.user_id) {
+		if (!req.params.user_id) {
 			return res.status(401).json({ message: 'user id not included!' });
 		}
 
 		await Task.findAll({
 			where: {
-				user_id: req.body.user_id,
+				user_id: req.params.user_id,
 			},
 			attributes: [
 				'id',
